@@ -11,17 +11,6 @@ export default {
 	// #endif
 	// #ifndef H5
 	BASE_API: import.meta.env.VITE_APP_BASE_API,
-	BASE_H5_URL: import.meta.env.VITE_APP_BASE_H5_URL,
-	// #endif
-	ShowDots: {
-		ALWAYS: {
-			key: 'always'
-		},
-		MORE: {
-			key: 'more'
-		},
-		NEVER: {
-			key: 'never'
-		}
-	}
+	BASE_H5_URL: import.meta.env.VITE_APP_BASE_H5_URL
+	// #endif	
 }

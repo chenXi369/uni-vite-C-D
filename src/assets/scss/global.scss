@@ -125,3 +125,13 @@
   border-left: 13rpx solid $uni-text-color-grey;
   border-bottom: 11rpx solid transparent;
 }
+
+.left-to-right {
+	transform: translateX(0);
+	transition: transform 0.3s ease-in-out;
+}
+
+.right-to-left {
+	transform: translateX(0);
+	transition: transform 0.3s ease-in-out;
+}
