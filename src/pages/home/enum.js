@@ -4,8 +4,9 @@ export const pageClassNames = [
 		name: '百科',
 		listMode: 'right',
 		blockMode: 'left',
-    width: '250rpx',
-    height: '350rpx'
+    width: '260rpx',
+    height: '350rpx',
+		component: '/pages/sub_pages/books/list'
 	},
 	{
 		id: 2,
@@ -36,7 +37,7 @@ export const pageClassNames = [
 		name: '喂养',
 		listMode: 'right',
 		blockMode: 'right',
-    width: '300rpx',
+    width: '310rpx',
     height: '220rpx'
 	},
 	{
@@ -44,7 +45,7 @@ export const pageClassNames = [
 		name: '寻诊',
 		listMode: 'left',
 		blockMode: 'right',
-    width: '300rpx',
+    width: '310rpx',
     height: '100rpx'
 	}
 ]

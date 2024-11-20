@@ -1,16 +1,7 @@
 {
-	"pages": [{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "",
-				"navigationStyle": "custom",
-				"h5": {
-					"titleNView": false
-				}
-			}
-		},
+	"pages": [
 		{
-			"path": "pages/login/login",
+			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "",
 				"navigationStyle": "custom",
@@ -22,34 +13,86 @@
 		{
 			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "审批中心",
-				"navigationStyle": "custom",
-				"disableScroll": true,
-				"h5": {
-					"titleNView": false
-				}
+				"navigationBarTitleText": "百科",
+				"navigationStyle": "default",
+				"disableScroll": true
 			}
 		},
 		{
-			"path": "pages/search/index",
+			"path": "pages/mine/mine",
 			"style": {
-				"navigationBarTitleText": "搜素",
-				"navigationStyle": "custom",
-				"h5": {
-					"titleNView": false
-				}
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "default",
+				"disableScroll": true
 			}
 		},
 		{
-			"path": "pages/encyclopedias/encyclopedias",
+			"path": "pages/around/around",
 			"style": {
-				"navigationBarTitleText": ""
+				"navigationBarTitleText": "周边",
+				"navigationStyle": "default",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/community/community",
+			"style": {
+				"navigationBarTitleText": "社区",
+				"navigationStyle": "default",
+				"disableScroll": true
 			}
 		}
 	],
+	"subPackages": [
+		{
+			"root": "pages/sub_pages",
+			"pages": [
+				{
+					"path": "books/list",
+					"style": {
+						"navigationBarTitleText": "百科列表",
+						"navigationStyle": "default",
+						"disableScroll": true
+					}
+				},
+				{
+					"path": "books/detail",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "default",
+						"disableScroll": true
+					}
+				}
+			]
+		}
+	],
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#4abec9",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"text": "社区",
+				"pagePath": "pages/community/community"
+			},
+			{
+				"text": "百科",
+				"pagePath": "pages/home/home"
+			},
+			{
+				"text": "周边",
+				"pagePath": "pages/around/around"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/mine/mine"
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "",
+		"navigationBarTitleText": "宠缘记",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#FFFFFF"
 	},

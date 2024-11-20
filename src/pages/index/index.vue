@@ -6,7 +6,7 @@
 
 <script setup>
 const toHome = () => {
-  uni.navigateTo({ url: '/pages/encyclopedias/encyclopedias' })
+  uni.switchTab({ url: '/pages/home/home' })
 }
 </script>
 

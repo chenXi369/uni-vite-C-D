@@ -5,7 +5,7 @@ const loginPage = "/pages/login/login"
 
 // 页面白名单（默认-首页，店员管理，设置，登录）
 const whiteList = [
-	'/pages/index/index', '/pages/login/login', '/pages/home/home'
+	'/pages/index/index', '/pages/login/login', '/pages/home/home', '/pages/encyclopedias/encyclopedias'
 ]
 
 // 检查地址白名单
@@ -18,27 +18,27 @@ function checkWhite(url) {
 let list = ["navigateTo", "redirectTo", "reLaunch", "switchTab"]
 
 list.forEach(item => {
-	uni.addInterceptor(item, {
-		invoke(to) {
-			if (getToken()) {
-				if (to.url === loginPage) {
-					uni.reLaunch({
-						url: "/"
-					})
-				}
-				return true
-			} else {
-				if (checkWhite(to.url)) {
-					return true
-				}
-				uni.reLaunch({
-					url: loginPage
-				})
-				return false
-			}
-		},
-		fail(err) {
-			console.log(err)
-		}
-	})
+	// uni.addInterceptor(item, {
+	// 	invoke(to) {
+	// 		if (getToken()) {
+	// 			if (to.url === loginPage) {
+	// 				uni.reLaunch({
+	// 					url: "/"
+	// 				})
+	// 			}
+	// 			return true
+	// 		} else {
+	// 			if (checkWhite(to.url)) {
+	// 				return true
+	// 			}
+	// 			uni.reLaunch({
+	// 				url: loginPage
+	// 			})
+	// 			return false
+	// 		}
+	// 	},
+	// 	fail(err) {
+	// 		console.log(err)
+	// 	}
+	// })
 })
