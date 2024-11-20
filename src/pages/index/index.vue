@@ -6,7 +6,7 @@
 
 <script setup>
 const toHome = () => {
-  uni.navigateTo({ url: '/pages/home/home' })
+  uni.navigateTo({ url: '/pages/encyclopedias/encyclopedias' })
 }
 </script>
 
